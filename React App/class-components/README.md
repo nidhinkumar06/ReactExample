@@ -34,3 +34,12 @@ Diff between class component and ES6 Functional Components
 |   |    available                    |     No need to use this.props         |
 |4  |  State can be defined           |     State can't be defined            |
 -------------------------------------------------------------------------------
+StateLifeCycle:
+
+Mounting - To set up a  component(render a component for the first time)
+UnMounting - To remove the component when the component is removed from the dom
+
+
+LifeCycle Hooks:
+1.ComponentDidMount() - runs after the component output has been rendered to the DOM.
+2.ComponentWillUnMount() - clear the component from the DOM element

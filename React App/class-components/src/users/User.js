@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import Users from './Users';
 
 class User extends Component {
+  state = {
+    users: [
+      {name: "john", age: 20},
+      {name: "john", age: 20},
+      {name: "john", age: 20}
+    ]
+  }
   render(){
     return (
       <div>
