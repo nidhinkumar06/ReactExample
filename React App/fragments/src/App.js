@@ -4,10 +4,13 @@ import './App.css';
 
 const FragmentCheck = () => {
   return (
-    // <div>Hi</div>
+  //   <div>
+  //   <div>Hi</div>
+  //   <div>Hello</div>
+  // </div>
     // [
-    //   <div>Hi</div>,
-    //   <div>Hello</div>
+    //   <div Key="1">Hi</div>,
+    //   <div key="2">Hello</div>
     // ]
     <Fragment>
       <div>Hi</div>

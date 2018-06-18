@@ -26,7 +26,7 @@ class App extends Component {
         <br/> <br/>
         <button onClick={this.changeState.bind(this, "Name change using bind")}>Change State using Bind function</button>
         <br/> <br/>
-        <input type="text" onChange={this.changeInputState} value={this.state.name}/>
+        <input type="text" onChange={this.changeInputState} value={this.state.name} placeholder="Enter Name"/>
         <div>{this.state.name}</div>
       </div>
     );
