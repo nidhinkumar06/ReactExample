@@ -10,9 +10,15 @@ const magic = function() {
 };
 // magic();
 
-const apple = { name: 'apple' };
-apple.magic = magic;
-apple.magic();
+// const switchTV = function() {
+//     console.log(this); //it won't work bcoz it won't know what is this.television
+// }
+
+// switchTV();
+
+// const apple = { name: 'apple' };
+// apple.magic = magic;
+// apple.magic();
 
 const orange = { name: 'orange' };
 magic.call(orange);

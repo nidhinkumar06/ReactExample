@@ -57,10 +57,10 @@ const FridgeWakes = function() {
 
 //this inside a constructor
 
-const CreateRoom = function(name) {
+const createRoom = function(name) {
     console.log(`${name}s Room`);
 }
 
-const HenRoom = new CreateRoom('Hen');
+const HenRoom = new createRoom('Hen');
 
 //this inside a class

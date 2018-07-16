@@ -1,0 +1,15 @@
+.Palette {
+  text-align: center;
+}
+
+.Palette-header {
+  background-color: #3e464c;
+  height: 20px;
+  padding: 20px;
+  color: white;
+}
+
+.Palette-title {
+  font-size: 24px;
+  text-align: left;
+}
