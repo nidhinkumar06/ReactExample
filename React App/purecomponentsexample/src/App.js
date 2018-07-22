@@ -16,7 +16,7 @@ class App extends PureComponent {
   componentDidMount() {
     setInterval(() => {
       this.setState(() => {
-        return {val: 1};
+        return {val: 19};
       })
     }, 2000);
   }

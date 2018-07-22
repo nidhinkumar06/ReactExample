@@ -31,7 +31,7 @@ Note:
 -------
 Don't use PureComponent in the project because of the following reasons:
 1.When we have multiple state in a single component.It will do ShallowCompare
-2.shallowcompare: It will compare the object reference of the previous state and the currentstate(If both has same reference then it will think nothing has changed).
+2.shallowcompare: It will compare the object reference of the previous state and the currentstate(If both has same reference(Keys) then it will think nothing has changed).
 
 3.React.PureComponent’s shouldComponentUpdate() only shallowly compares the objects. If these contain complex data structures, it may produce false-negatives for deeper differences. Only extend PureComponent when you expect to have simple props and state, or use forceUpdate() when you know deep data structures have changed. Or, consider using immutable objects to facilitate fast comparisons of nested data.
 
@@ -44,3 +44,14 @@ Places where PureComponents can be used is:
 Video URL:
 -----------
 https://youtu.be/PXXjkq4A-OU  
+
+
+Example Explanation:
+=====================
+1.In the example first the render method gets called
+2.Then stateless method named temp got called
+3.Then to check whether the value gets changed or not componentDidMount gets called for every 2 seconds
+4.When componentDidMount gets called both the app(render()) and temp() gets called (to check this comment the shouldComponentUpdate())
+5.To avoid this we are using shouldComponentUpdate() which will check if the current value and the next value is same or not.
+6.If it is same then render is not called (can see only one time app and temp are called in log)
+7.But the shouldComponentUpdate gets called for every 2 secs.
