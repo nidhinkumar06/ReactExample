@@ -1,3 +1,5 @@
+NewBoston Link: https://github.com/buckyroberts/React-Redux-Boilerplate
+
 1.For installing React-Redux from npm command
 
 > https://www.npmjs.com/package/react-redux
@@ -32,3 +34,20 @@ Reducer is a piece of data which is stored in the store
 
 createStore - used to created store
 combineReducers - used to combine all the reducers which we define
+
+<Provider>
+  <App />
+</Provider>
+
+Provider will take all of the data from the store and since it is wrapped to App which means the store object will be available to all the components in the app.
+
+Actions:
+
+It has two type
+1.type
+2.argument
+
+Error:
+mapDispatchToProps() in Connect(UserList) must return a plain object. Instead received undefined.
+
+Solution:  return is not added for bindActionCreators

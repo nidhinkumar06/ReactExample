@@ -18,5 +18,17 @@ export default function () {
       age: 28,
       city: 'Kannur',
     },
+    {
+      id: 4,
+      name: 'Rames',
+      age: 55,
+      city: 'Kannur',
+    },
+    {
+      id: 5,
+      name: 'Shylaja',
+      age: 53,
+      city: 'Kannur',
+    },
   ];
 };
