@@ -8,6 +8,26 @@ NewBoston Link: https://github.com/buckyroberts/React-Redux-Boilerplate
   https://www.npmjs.com/package/redux-promise
   https://github.com/reduxjs/redux-thunk
 
+1.npm i react-redux is used for the following:
+---------------------------------------------
+Provider
+connect([mapStateToProps], [mapDispatchToProps], [mergeProps], [options])
+
+2.npm i redux
+---------------
+To create store
+
+3.npm i redux logger
+---------------------
+To log the redux things we use redux logger
+
+4.npm i redux promise
+-----------------------
+Actions which will have promises we will use redux promises
+
+5.npm i redux thunk
+---------------------
+
 Command to installing
 
 > npm i react-redux
