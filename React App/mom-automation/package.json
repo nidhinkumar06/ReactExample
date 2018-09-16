@@ -1,0 +1,27 @@
+{
+  "name": "mom-automation",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@coreui/coreui": "^2.0.6",
+    "@coreui/icons": "^0.3.0",
+    "@coreui/react": "^2.0.5",
+    "firebase": "^5.4.2",
+    "font-awesome": "^4.7.0",
+    "material-icons-react": "^1.0.2",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-mdc-web": "^0.17.0",
+    "react-scripts": "1.1.5",
+    "react-toastify": "^4.3.0",
+    "reactstrap": "^6.4.0",
+    "redux-form": "^7.4.2",
+    "simple-line-icons": "^2.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
