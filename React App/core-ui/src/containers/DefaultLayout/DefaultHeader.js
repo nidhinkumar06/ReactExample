@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Badge, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavItem, NavLink } from 'reactstrap';
+import { DropdownItem, DropdownMenu, DropdownToggle, Nav} from 'reactstrap';
 import PropTypes from 'prop-types';
 
-import { AppAsideToggler, AppHeaderDropdown, AppNavbarBrand, AppSidebarToggler } from '@coreui/react';
+import { AppHeaderDropdown, AppNavbarBrand, AppSidebarToggler } from '@coreui/react';
 import logo from '../../assets/img/brand/logo.svg'
 import sygnet from '../../assets/img/brand/sygnet.svg'
 import avatar from '../../assets/avatars/profile.png';
@@ -35,7 +35,8 @@ class DefaultHeader extends Component {
 
     // eslint-disable-next-line
     const { children, ...attributes } = this.props;
-    const mail = this.props.authUser.authUser.email;
+    // const mail = this.props.authUser.authUser.email;
+    const mail = 'temp@gmail.com';
     return (
       <React.Fragment>
         <AppSidebarToggler className="d-lg-none" display="md" mobile />

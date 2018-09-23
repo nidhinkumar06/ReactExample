@@ -11,13 +11,18 @@ export default {
       icon: 'cui-people'
     },
     {
-      name: 'MoM',
+      name: 'Meeting',
       url: '/mom',
       icon: 'cui-user'
     },
     {
-      name: 'Add',
-      url: '/add',
+      name: 'Project',
+      url: '/project',
+      icon: 'cui-user'
+    },
+    {
+      name: 'Client Calls',
+      url: '/project',
       icon: 'cui-user'
     }
   ]

@@ -5,7 +5,7 @@ const Dashboard = MyLoadable({
   loader: () => import('../../src/pages/secure/Dashboard')
 });
 
-const Report = MyLoadable({
+const ReportList = MyLoadable({
   loader: () => import('../../src/pages/secure/Report')
 });
 
@@ -17,18 +17,27 @@ const Login = MyLoadable({
   loader: () => import('../pages/Login')
 });
 
-const Add = MyLoadable({
-  loader: () => import('../../src/pages/secure/Add')
+const ReportAdd = MyLoadable({
+  loader: () => import('../../src/pages/secure/Report/Add')
 });
 
+
+const ProjectList = MyLoadable({
+  loader: () => import('../../src/pages/secure/Project')
+});
+
+const ProjectAdd = MyLoadable({
+  loader: () => import('../../src/pages/secure/Project/Add')
+});
 
 const routes = [
   { path: '/', exact: true, name: 'Home', component: DefaultLayout },
   { path: '/login', exact: true, name: 'Login', component: Login },
   { path: '/dashboard', exact: true, name: 'Dashboard', component: Dashboard },
-  { path: '/report', exact: true, name: 'SivagangaWeekly Report', component: Report },
-  { path: '/agents', exact: true, name: 'Minutes of Meeting', component: Mom },
-  { path: '/add', exact: true, name: 'Add Data', component: Add}
+  { path: '/report', exact: true, name: 'SivagangaWeekly Report', component: ReportList },
+  { path: '/report/add', exact: true, name: 'Add Data', component: ReportAdd},
+  { path: '/project', exact: true, name: 'Project', component: ProjectList},
+  { path: '/project/add', exact: true, name: 'Add Project', component: ProjectAdd}
 ];
 
 export default routes;

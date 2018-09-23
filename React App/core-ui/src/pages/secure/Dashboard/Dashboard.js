@@ -1,7 +1,7 @@
 import React from 'react';
 import withAuthorization from '../../../hoc/session/withAuthorization';
 
-const Dashboard = ({}) => {
+const Dashboard = () => {
   return (
     <div>Dasboardpage</div>
   );
