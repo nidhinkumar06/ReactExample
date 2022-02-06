@@ -5,6 +5,7 @@ Fragments will work from 16.2 +
 Case:
 If we use the following command the program will run but in the console we will get an error as follows:
 
+```
 const FragmentCheck = () => {
   return (
     // <div>Hi</div>
@@ -15,6 +16,7 @@ const FragmentCheck = () => {
 
   )
 }
+```
 
 Error:
 
@@ -25,6 +27,7 @@ index.js:2178 Warning: Each child in an array or iterator should have a unique "
 
 Solution:
 ==========
+```
 const FragmentCheck = () => {
   return (
     // <div>Hi</div>
@@ -35,16 +38,22 @@ const FragmentCheck = () => {
   )
 }
 
+```
 This kind of approach is very bad so that we will use Fragments
 
+```
 <Fragment>
   <div>Hi</div>
   <div>Hello</div>
 </Fragment>
 
+```
 Shorter syntax:
+```
 <>
   <div>Hi</div>
   <div>Hello</div>
 </>
+
+```
 But Shorter syntax is not supported in many devices
